@@ -40,4 +40,4 @@ RUN apt update && apt install -y pkg-config build-essential autoconf bison curl 
     apt autoremove --purge -y pkg-config build-essential autoconf bison curl re2c && \
     apt autoremove && apt clean && \
     rm -rf /var/lib/apt/lists/* && rm -rf /var/cache/apt/*
-CMD ["php-fpm"]
+CMD ["php", "-a"]
