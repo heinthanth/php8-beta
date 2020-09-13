@@ -2,7 +2,7 @@ FROM debian:latest
 RUN apt update && apt install -y pkg-config build-essential autoconf bison curl re2c \
     libxml2-dev libsqlite3-dev libonig-dev libssl-dev libcurl4-openssl-dev libpq-dev libreadline-dev libzip-dev && \
     cd /tmp && \
-    curl https://downloads.php.net/~carusogabriel/php-8.0.0beta1.tar.gz -O && \
+    curl https://downloads.php.net/~carusogabriel/php-8.0.0beta3.tar.gz -O && \
     tar -xf php-8.0.0beta1.tar.gz && \
     cd php-8.0.0beta1 && \
     ./configure \
