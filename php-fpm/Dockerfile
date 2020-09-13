@@ -3,8 +3,8 @@ RUN apt update && apt install -y pkg-config build-essential autoconf bison curl 
     libxml2-dev libsqlite3-dev libonig-dev libssl-dev libcurl4-openssl-dev libpq-dev libreadline-dev libzip-dev && \
     cd /tmp && \
     curl https://downloads.php.net/~carusogabriel/php-8.0.0beta3.tar.gz -O && \
-    tar -xf php-8.0.0beta1.tar.gz && \
-    cd php-8.0.0beta1 && \
+    tar -xf php-8.0.0beta3.tar.gz && \
+    cd php-8.0.0beta3 && \
     ./configure \
     --enable-mysqlnd \
     --with-pdo-mysql \
